@@ -26,7 +26,7 @@ const projects = [
     icon: Users,
     title: "iVocifyNextGen",
     subtitle: "Job Application Platform",
-    tags: ["Next.js", "TypeScript", "REST APIs", "MongoDB"],
+    tags: ["Next.js", "TypeScript", "REST APIs", "PostgrasSQL"],
     description:
       "A next-generation hiring platform streamlining the recruitment lifecycle — job posting to candidate management.",
   },

@@ -27,7 +27,7 @@ const projects = [
     icon: Users,
     title: "VocifyNextGen",
     subtitle: "Job Application Platform",
-    tags: ["Next.js", "TypeScript", "REST APIs", "MongoDB"],
+    tags: ["Next.js", "TypeScript", "REST APIs", "PostgreSQL"],
     description:
       "A next-generation hiring platform designed to streamline the entire recruitment lifecycle — from job posting to candidate management. Built as a product with real-world scalability in mind.",
     highlights: [
