@@ -5,14 +5,15 @@ import Layout from "../components/Layout";
 import Section from "../components/Section";
 
 const stats = [
-  { label: "Projects Built", value: "10+" },
+  { label: "Projects Built", value: "5+" },
   { label: "Tech Stacks", value: "6+" },
   { label: "Research Papers", value: "1" },
-  { label: "Internships", value: "1+" },
+  { label: "Internships", value: "2+" },
 ];
 
 const projects = [
   {
+    web: "http://ai-application-zsql.vercel.app",
     icon: Brain,
     title: "Quick AI",
     subtitle: "SaaS Web Application",
@@ -21,8 +22,9 @@ const projects = [
       "A full-stack SaaS platform with AI capabilities, authentication, subscription payments, and multiple AI integrations.",
   },
   {
+    web: "https://ivoicifynextgen.com/",
     icon: Users,
-    title: "VocifyNextGen",
+    title: "iVocifyNextGen",
     subtitle: "Job Application Platform",
     tags: ["Next.js", "TypeScript", "REST APIs", "MongoDB"],
     description:
@@ -43,7 +45,7 @@ const experiences = [
     icon: Briefcase,
     role: "Software Developer Intern",
     company: "Dhakad Innovations Pvt. Ltd",
-    period: "2024 – Present",
+    period: "July 2025 – March 2026",
     points: [
       "Built the Jivdani Hospital Website — scalable, responsive UI with REST API integration",
       "Led development of VocifyNextGen — a full hiring platform with role-based access & API-driven architecture",
@@ -55,7 +57,7 @@ const experiences = [
     icon: Smartphone,
     role: "Beta Tester",
     company: "Nothing India",
-    period: "2023 – Present",
+    period: "Jan 2025 – March 2026",
     points: [
       "Selected as an early beta tester for Nothing smartphones and IoT devices",
       "Tested pre-release software builds, identifying bugs and UX issues before public launch",
@@ -197,6 +199,7 @@ const Index = () => {
             Real challenges, real solutions — built with care and shipped with purpose.
           </p>
         </div>
+        
 
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, i) => (
@@ -208,6 +211,11 @@ const Index = () => {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="rounded-2xl border border-border bg-background p-6 card-hover"
             >
+
+
+              <a href={project.web} className="inline-flex items-center gap-2 text-sm text-primary font-medium hover:underline mb-6"  target="_blank">
+            View Project <ArrowRight size={14} />
+          </a>
               <div className="p-3 rounded-xl gradient-bg w-fit mb-4">
                 <project.icon size={22} className="text-primary-foreground" />
               </div>

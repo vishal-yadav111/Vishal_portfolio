@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Brain, Users, Camera } from "lucide-react";
+import { ExternalLink, Brain, Users, Camera,  } from "lucide-react";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
+import { L } from "vitest/dist/chunks/reporters.d.BFLkQcL6.js";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
+    web:"http://ai-application-zsql.vercel.app",
     icon: Brain,
     title: "Quick AI",
     subtitle: "SaaS Web Application",
@@ -20,6 +23,7 @@ const projects = [
     ],
   },
   {
+    web:"https://ivoicifynextgen.com/",
     icon: Users,
     title: "VocifyNextGen",
     subtitle: "Job Application Platform",
@@ -67,6 +71,7 @@ const Projects = () => {
 
         <div className="space-y-12">
           {projects.map((project, i) => (
+            <a href={project.web} key={project.title} className="block" target="_blank">
             <motion.article
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -109,6 +114,7 @@ const Projects = () => {
                 ))}
               </ul>
             </motion.article>
+            </a>
           ))}
         </div>
       </Section>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase, Smartphone } from "lucide-react";
+import { Briefcase, Link, Smartphone } from "lucide-react";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 
@@ -8,7 +8,8 @@ const experiences = [
     icon: Briefcase,
     role: "Software Developer Intern",
     company: "Dhakad Innovations Pvt. Ltd",
-    period: "2024 – Present",
+    Web: "Dhakad Innovations Pvt. Ltd",
+    period: "July 2025 – March 2026",
     projects: [
       {
         name: "Jivdani Hospital Website",
@@ -38,7 +39,8 @@ const experiences = [
     icon: Smartphone,
     role: "Beta Tester",
     company: "Nothing India",
-    period: "2023 – Present",
+    period: "Jan 2024 – March 2026",
+    Link: "",
     projects: [],
     generalPoints: [
       "Selected as an early beta tester for Nothing smartphones and IoT devices before public launch",
@@ -99,9 +101,11 @@ const Experience = () => {
                   {/* Project sub-sections */}
                   {exp.projects.map((project, pi) => (
                     <div key={pi} className="mb-6">
-                      <h4 className="text-sm font-heading font-semibold text-primary mb-3">
+                      
+                      <h4 className="text-sm font-heading font-semibold text-primary mb-3" >
                         ▸ {project.name}
                       </h4>
+                      
                       <ul className="space-y-2 ml-3">
                         {project.points.map((p, j) => (
                           <li key={j} className="flex gap-3 text-sm text-muted-foreground">
